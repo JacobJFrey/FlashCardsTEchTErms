@@ -38,3 +38,20 @@ body {
   background-color: black;
   color: whitesmoke;
 }
+
+.icon {
+  color: lime;
+  border: 2px double black;
+  padding: 3px;
+  box-shadow: 5px 5px 10px blue, 0px 0px 20px dodgerblue, 0px 0px 10px cornflowerblue, 0px 0px 5px black inset;
+}
+
+#inactive {
+  color: gray;
+  background: lightgrey;
+}
+
+#inactive:hover {
+  color: red;
+  background: white;
+}

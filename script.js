@@ -1,6 +1,6 @@
 let cardStack = [];
 
-function myFunction() {
+function revealDef() {
     var x = document.getElementById("definition");
     if (x.style.display === "none") {
       x.style.display = "flex";
