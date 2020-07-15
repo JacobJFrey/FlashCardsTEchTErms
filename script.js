@@ -16,7 +16,7 @@ function collectionAPITerms(){
   flashStack.push({term: "DNS", definition: "Domain Name System"});
   flashStack.push({term: "DTO", definition: "Data Transfer Object"});
   flashStack.push({term: "HTTP", definition: "HyperText Transfer Protocol"});
-  flashStack.push({term: "HTTPS", definition: "HyperText Transfer Protocol Secure"};
+  flashStack.push({term: "HTTPS", definition: "HyperText Transfer Protocol Secure"});
   flashStack.push({term: "JAR", definition: "Java ARchive"});
   flashStack.push({term: "JWT", definition: "Java Web Token"});
   flashStack.push({term: "JSON", definition: "JavaScript Object Notation"});
@@ -39,3 +39,8 @@ function shuffle(flashCardStack) {
   return shuffled;
 }
 
+function switchCard(){
+  document.getElementById("term").innerHTML = "Jake Rules";
+  document.getElementById("definition").style.display = "none";
+  document.getElementById("definition").innerHTML = "But which one?";
+}

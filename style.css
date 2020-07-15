@@ -1,5 +1,6 @@
 body {
     background: dodgerblue;
+    color: whitesmoke;
   }
   
 .flashCard {
@@ -16,7 +17,9 @@ body {
     border: 2px solid black;
     background: wheat;
     box-shadow: 5px 5px 10px blue, 0px 0px 20px dodgerblue, 0px 0px 10px cornflowerblue, 0px 0px 5px black inset;
-}
+
+    color: black;
+  }
 
 #term {
   font-size: 500%;
