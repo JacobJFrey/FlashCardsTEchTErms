@@ -27,6 +27,7 @@ function collectionAPITerms(){
   flashStack.push({term: "URL", definition: "Uniform Resource Locator"});
   flashStack.push({term: "URI", definition: "Uniform Resource Identifier"});
   flashStack.push({term: "WAR", definition: "Web ARchive"});
+  flashStack.push({term: "Where is Steve from?", definition: "Miami"});
   return flashStack;
 }
 
@@ -46,6 +47,7 @@ function shuffle(flashCardStack) {
 function switchCard(){
   if (cardStack.length < 1) {
     cardStack = collectionAPITerms();
+    //cardStack = shuffle(cardStack);
   }
   let nextCard = cardStack.pop();
   document.getElementById("term").innerText = nextCard.term;
