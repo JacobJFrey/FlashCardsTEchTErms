@@ -1,11 +1,11 @@
 let cardStack = [];
 
 function revealDef() {
-    var x = document.getElementById("definition");
-    if (x.style.display === "none") {
-      x.style.display = "flex";
+    var m = document.getElementById("definition");
+    if (m.style.display === "none") {
+      m.style.display = "flex";
     } else {
-      x.style.display = "none";
+      m.style.display = "none";
     }
   }
 
@@ -40,7 +40,7 @@ function shuffle(flashCardStack) {
 }
 
 function switchCard(){
-  document.getElementById("term").innerHTML = "Jake Rules";
+  document.getElementById("term").innerText = "Jake Rules";
   document.getElementById("definition").style.display = "none";
-  document.getElementById("definition").innerHTML = "But which one?";
+  document.getElementById("definition").innerText = "But which one?";
 }

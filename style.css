@@ -27,6 +27,7 @@ body {
 
 #definition {
   font-size: 200%;
+  display: none;
 }
 
 #cardCount {

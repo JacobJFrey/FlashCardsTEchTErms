@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> 
 </head>
 <body>
+    <div id="navBar">    <!--setting up the nave bar--> 
+
+        <a id="inactive" class="icon reveal" onclick="revealDef()"><i class="fas fa-eye"></i></a>
+        <!--<i class="fas fa-eye-slash"></i>-->
+        <a id="inactive" class="icon switchCard" onclick="switchCard()"><i class="fas fa-hand-spock"></i></a>
+        
+        <div id="cardCount">Card Count</div>
     
-    <a id="inactive" class="icon reveal" onclick="revealDef()"><i class="fas fa-eye"></i></a>
-
-    <a id="inactive" class="icon switchCard" onclick="switchCard()"><i class="fas fa-hand-spock"></i></a>
-
-    <div id="cardCount">Card Count</div>
-
+    </div>
+    <!--desktop for Flash Cards-->
     <div id="term" class="flashCard">
         TE-rminology
     </div>
