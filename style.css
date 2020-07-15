@@ -40,7 +40,13 @@ body {
   color: whitesmoke;
 }
 
+.navBar {
+  display: flex;
+  width: 100vw;
+}
+
 .icon {
+  width: 40%;
   color: lime;
   border: 2px double black;
   padding: 3px;
