@@ -1,5 +1,6 @@
 let cardStack = [];
 
+
 function revealDef() {
     var m = document.getElementById("definition");
     if (m.style.display === "none") {
@@ -8,6 +9,7 @@ function revealDef() {
       m.style.display = "none";
     }
   }
+
 
 function collectionAPITerms(){
   let flashStack = [];
@@ -28,19 +30,25 @@ function collectionAPITerms(){
   return flashStack;
 }
 
+
 function shuffle(flashCardStack) {
   let index = 0;
   let shuffled = [];
   while (flashCardStack.length > 0) {
-    index = Math.random() * flashCardStack.length;
+    index = Math.floor(Math.random() * flashCardStack.length);
     let card = flashCardStack.splice(index,1);
     shuffled.push(card);
   }
   return shuffled;
 }
 
+
 function switchCard(){
-  document.getElementById("term").innerText = "Jake Rules";
+  if (cardStack.length < 1) {
+    cardStack = collectionAPITerms();
+  }
+  let nextCard = cardStack.pop();
+  document.getElementById("term").innerText = nextCard.term;
   document.getElementById("definition").style.display = "none";
-  document.getElementById("definition").innerText = "But which one?";
+  document.getElementById("definition").innerText = nextCard.definition;
 }
