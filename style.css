@@ -31,6 +31,7 @@ body {
 }
 
 #cardCount {
+  margin-right: 20px;
   height: 30px;
   width: 100px;
   align-items: center;
@@ -38,18 +39,19 @@ body {
   display: inline-flex;
   background-color: black;
   color: whitesmoke;
+  border: 2px inset darkgray;
 }
 
-.navBar {
+#navBar {
   display: flex;
   width: 100vw;
 }
 
 .icon {
-  width: 40%;
   color: lime;
   border: 2px double black;
   padding: 3px;
+  margin-right: 10px;
   box-shadow: 5px 5px 10px blue, 0px 0px 20px dodgerblue, 0px 0px 10px cornflowerblue, 0px 0px 5px black inset;
 }
 
