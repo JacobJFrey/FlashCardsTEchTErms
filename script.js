@@ -1,12 +1,14 @@
 let cardStack = [];
 
-
 function revealDef() {
-    var m = document.getElementById("definition");
+    const m = document.getElementById("definition");
+    const eye = document.getElementById("eye");
     if (m.style.display === "none") {
       m.style.display = "flex";
+      eye.setAttribute("class","fas fa-eye-slash");
     } else {
       m.style.display = "none";
+      eye.setAttribute("class","fas fa-eye");
     }
   }
 
@@ -32,24 +34,24 @@ function collectionAPITerms(){
 }
 
 
-function shuffle(flashCardStack) {
-  let index = 0;
-  let shuffled = [];
-  while (flashCardStack.length > 0) {
-    index = Math.floor(Math.random() * flashCardStack.length);
-    let card = flashCardStack.splice(index,1);
-    shuffled.push(card);
+function shuffle() {
+  let index = 1;
+  let shuffled = this.cardStack;
+  while (shuffle.length > 0) {
+    index = Math.floor(Math.random() * shuffled.length);
+    let card = shuffled.splice(index,1);
+    cardStack.push(card);
   }
-  return shuffled;
 }
 
 
 function switchCard(){
   if (cardStack.length < 1) {
     cardStack = collectionAPITerms();
-    //cardStack = shuffle(cardStack);
+    //shuffle();
   }
-  let nextCard = cardStack.pop();
+  let nextCard = cardStack.shift();
+  document.getElementById("cardCount").innerText = `Cards Remaining: ${cardStack.length}`
   document.getElementById("term").innerText = nextCard.term;
   document.getElementById("definition").style.display = "none";
   document.getElementById("definition").innerText = nextCard.definition;

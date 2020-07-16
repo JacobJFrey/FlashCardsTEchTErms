@@ -1,24 +1,26 @@
 body {
     background: dodgerblue;
+    
+    font-size: 12px;
     color: whitesmoke;
   }
   
 .flashCard {
-    display: flex;
+    color: black;
     font-family: 'Architects Daughter', cursive;
+    
+    display: flex;
     justify-content: center;
     align-items: center;
-    
-    
     width: 80vw;
-    height: 20vh;
+    height: 30vh;
     padding: 20px;
     margin: 20px;
     border: 2px solid black;
     background: wheat;
     box-shadow: 5px 5px 10px blue, 0px 0px 20px dodgerblue, 0px 0px 10px cornflowerblue, 0px 0px 5px black inset;
 
-    color: black;
+    
   }
 
 #term {
@@ -32,6 +34,8 @@ body {
 
 #cardCount {
   margin-right: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
   height: 30px;
   width: 100px;
   align-items: center;
@@ -56,6 +60,10 @@ body {
 }
 
 #inactive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
   color: gray;
   background: lightgrey;
 }

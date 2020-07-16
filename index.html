@@ -11,16 +11,18 @@
 </head>
 <body>
     
-    <div id="navBar">    <!--setting up the nave bar--> 
+    <div id="navBar">    
+        <!--setting up the nave bar--> 
         <div id="version">Version 0.01 Alpha: MVP</div>
         
         <div id="cardCount">Card Count</div>
         
-        <a id="inactive" class="icon reveal" onclick="revealDef()"><i class="fas fa-eye"></i></a>
-
-        <!--<i class="fas fa-eye-slash"></i>-->
+        <a id="inactive" class="icon reveal" onclick="revealDef()"><i id="eye" class="fas fa-eye"></i></a>
+        
         <a id="inactive" class="icon switchCard" onclick="switchCard()"><i class="fas fa-hand-spock"></i></a>
-    
+
+        <a id="inactive" class="icon shuffle" onclick="shuffle()"><i class="fas fa-random"></i></a>
+
     </div>
     <!--desktop for Flash Cards-->
     <div id="term" class="flashCard">
