@@ -64,8 +64,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 5%;
-  color: gray;
-  background: lightgrey;
+  color: darkslategray;
+  background: dimgray;
 }
 
 #active {
