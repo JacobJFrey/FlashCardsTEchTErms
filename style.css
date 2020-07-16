@@ -22,11 +22,11 @@ body {
   }
 
 #term {
-  font-size: 500%;
+  font-size: 5em;
 }
 
 #definition {
-  font-size: 200%;
+  font-size: 4em;
   display: none;
 }
 
@@ -63,4 +63,16 @@ body {
 #inactive:hover {
   color: red;
   background: white;
+}
+
+#version {
+  color: lightblue;
+  font-size: 10px;
+  order: 1;
+}
+
+@media (max-width: 700px) {
+body {
+  font-size: 10px;
+}
 }
