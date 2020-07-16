@@ -34,12 +34,12 @@ body {
 
 #cardCount {
   margin-right: 20px;
-  padding-left: 8px;
+  padding-left: 10px;
   padding-right: 8px;
   height: 30px;
-  width: 100px;
+  width: 110px;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   display: inline-flex;
   background-color: black;
   color: whitesmoke;
