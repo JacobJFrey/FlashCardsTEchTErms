@@ -68,7 +68,16 @@ body {
   background: lightgrey;
 }
 
-#inactive:hover {
+#active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+  color: gray;
+  background: lightgrey;
+}
+
+#active:hover {
   color: red;
   background: white;
 }
