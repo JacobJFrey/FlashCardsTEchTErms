@@ -27,8 +27,8 @@ body {
     padding: 20px;
     margin: 20px;
     border: 2px solid black;
-    background: wheat;
-    box-shadow: 5px 5px 10px lime, 0px 0px 20px lime, 0px 0px 10px cornflowerblue, 0px 0px 5px burlywood inset;
+    background:black;
+    box-shadow: 5px 5px 10px lime, 0px 0px 20px lime, 0px 0px 10px #ffce8d, 0px 0px 5px burlywood inset;
 }
 
 #term {
