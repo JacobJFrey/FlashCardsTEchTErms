@@ -5,10 +5,9 @@
 }  */
 
 body {
-    background: linear-gradient(to bottom right, yellow,orange, red, darkred
-    );
+    background: linear-gradient(to bottom right, lime, yellow, #Ffce00, orange, red );
     background-repeat: no-repeat;
-    height: 100vw;
+    height: 100vh;
     width: 100vw;
 
     font-size: 12px;
@@ -16,8 +15,9 @@ body {
   }
   
 .flashCard {
-    color: black;
-    font-family: Modak, cursive;
+    color: orangered;
+    font-family: Ranchers, cursive;
+    text-shadow: 0px 0px 20px yellowgreen, 0px 0px 10px yellow;
     
     display: flex;
     justify-content: center;
@@ -29,12 +29,17 @@ body {
     border: 2px solid black;
     background: wheat;
     box-shadow: 5px 5px 10px lime, 0px 0px 20px lime, 0px 0px 10px cornflowerblue, 0px 0px 5px burlywood inset;
-
-    
-  }
+}
 
 #term {
-  font-size: 5em;
+display: flex;
+flex-direction: column;
+height: auto;
+font-size: 5em;
+}
+
+#baseInfo {
+font-size: .7em;
 }
 
 #definition {
