@@ -24,7 +24,14 @@ body {
   }
 
 #term {
+  display: flex;
+  flex-direction: column;
+  height: auto;
   font-size: 5em;
+}
+
+#baseInfo {
+  font-size: .7em;
 }
 
 #definition {
