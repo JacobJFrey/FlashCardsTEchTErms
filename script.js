@@ -10,6 +10,7 @@ function changeTheme() {
   document.getElementById("thisStyle").setAttribute("href","steve.css");
 }
 
+
 function revealDef() {
     const m = document.getElementById("definition");
     const eye = document.getElementById("eye");
@@ -42,7 +43,8 @@ function collectionAPITerms(){
   return flashStack;
 }
 
-function collectionAPITerms(){
+
+function collectionHTMLTerms(){
   let flashStack = [];
   flashStack.push({term: "API", definition: "Application Program Interface"});
   flashStack.push({term: "CRUD", definition: "Creat, Read, Update, Delete"});
@@ -62,16 +64,6 @@ function collectionAPITerms(){
 }
 
 
-function shuffle() {
-  let index = 1;
-  let shuffled = this.cardStack;
-  while (shuffle.length > 0) {
-    index = Math.floor(Math.random() * shuffled.length);
-    let card = shuffled.splice(index,1);
-    cardStack.push(card);
-  }
-}
-
 function fisher_yeates_randomize(array) {
   let currentIndex = array.length;
   let temporaryValue;
@@ -86,18 +78,18 @@ function fisher_yeates_randomize(array) {
   return array;
 }
 
+
 function restock_shuffle(){
     cardStack = collectionAPITerms();
     cardStack = fisher_yeates_randomize(cardStack);
 }
 
+
 function switchCard(){
-  
   //empty deck invokes restock
   if (cardStack.length < 1) {
     restock_shuffle();
   }
-  
   //flip over next card
   let nextCard = cardStack.shift();
   document.getElementById("cardCount").innerText = `Cards Remaining: ${cardStack.length}`
