@@ -1,0 +1,105 @@
+/* @font-face {
+    font-family: Modak;
+    font-style: normal;
+    src: url('https://fonts.googleapis.com/css2?family=Modak&display=swap'); 
+}  */
+
+body {
+    background: linear-gradient(to bottom right, yellow,orange, red, darkred
+    );
+    background-repeat: no-repeat;
+    height: 100vw;
+    width: 100vw;
+
+    font-size: 12px;
+    color: whitesmoke;
+  }
+  
+.flashCard {
+    color: black;
+    font-family: Modak, cursive;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 30vh;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid black;
+    background: wheat;
+    box-shadow: 5px 5px 10px lime, 0px 0px 20px lime, 0px 0px 10px cornflowerblue, 0px 0px 5px burlywood inset;
+
+    
+  }
+
+#term {
+  font-size: 5em;
+}
+
+#definition {
+  font-size: 4em;
+  display: none;
+}
+
+#cardCount {
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-right: 8px;
+  height: 30px;
+  width: 110px;
+  align-items: center;
+  justify-content: left;
+  display: inline-flex;
+  background-color: black;
+  color: whitesmoke;
+  border: 2px inset darkgray;
+}
+
+#navBar {
+  display: flex;
+  width: 100vw;
+}
+
+.icon {
+  color: lime;
+  border: 2px double black;
+  padding: 3px;
+  margin-right: 10px;
+  box-shadow: 5px 5px 10px lime, 0px 0px 20px lime, 0px 0px 10px cornflowerblue, 0px 0px 5px burlywood inset;
+}
+
+#inactive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+  color: darkslategray;
+  background: dimgray;
+}
+
+#active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+  color: gray;
+  background: lightgrey;
+}
+
+#active:hover {
+  color: greenyellow;
+  background: limegreen;
+}
+
+#version {
+  color: lightblue;
+  font-size: 10px;
+  order: 1;
+}
+
+@media (max-width: 700px) {
+body {
+  font-size: 10px;
+}
+}

@@ -1,8 +1,14 @@
 let cardStack = [];
 
+//event listeners
+
 //icon references
 const close_eye = "fas fa-eye-slash";
 const open_eye = "fas fa-eye";
+
+function changeTheme() {
+  document.getElementById("thisStyle").setAttribute("href","steve.css");
+}
 
 function revealDef() {
     const m = document.getElementById("definition");
@@ -53,7 +59,7 @@ function fisher_yeates_randomize(array) {
   let randomIndex;
   while ( 0 != currentIndex) {
     randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex --;
+    currentIndex--;
     temporaryValue = array[currentIndex];
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
