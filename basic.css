@@ -1,0 +1,119 @@
+body {
+    background: lightgray;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+
+    font-size: 8px;
+    color:black;
+  }
+  
+
+#navBar {
+  display: flex;
+  width: 100vw;
+}
+
+
+  #cardCount {
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 8px;
+    height: 30px;
+    width: 110px;
+    align-items: center;
+    justify-content: left;
+    display: inline-flex;
+    background-color: whitesmoke;
+    color: darkslategray;
+    border: 2px inset darkgray;
+  }
+
+
+  .icon {
+    color: black;
+    border: 2px double black;
+    border-radius: 5px;
+    padding: 3px;
+    margin-right: 10px;
+    box-shadow: 1px 1px 5px black, 0px 0px 5px darkgray, 0px 0px 5px lightgray inset;;
+  }
+
+  #inactive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    color: darkslategray;
+    background: #afafaf;
+  }
+
+  #active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    color: gray;
+    background: lightgray;
+  }
+
+  #active:hover {
+    color: dodgerblue;
+    background: white;
+  }
+
+  form {
+    background: whitesmoke;
+    border-color: black;
+    border-style: solid;
+    border-top: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    padding: 10px;
+
+    font-size: medium;
+  }
+
+
+.flashCard {
+    color: d;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0px 0px 20px lightgray, 0px 0px 10px lightgray;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 30vh;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid black;
+    background:whitesmoke;
+    box-shadow: 5px 5px 10px black, 0px 0px 20px darkgray, 0px 0px 15px lightgray inset;
+}
+
+
+#baseInfo {
+font-size: .7em;
+}
+
+
+#term {
+display: flex;
+flex-direction: column;
+height: auto;
+font-size: 5em;
+}
+
+#definition {
+  font-size: 4em;
+  display: none;
+}
+
+
+@media (max-width: 700px) {
+body {
+  font-size: 10px;
+}
+}

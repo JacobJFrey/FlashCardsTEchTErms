@@ -1,16 +1,20 @@
 let cardStack = [];
 
 //event listeners
+document.addEventListener('DOMContentLoaded', () =>{
+
+});
 
 //icon references
 const close_eye = "fas fa-eye-slash";
 const open_eye = "fas fa-eye";
 
+//function switched CSS theme
 function changeTheme() {
   document.getElementById("thisStyle").setAttribute("href","steve.css");
 }
 
-
+//function reveals definition
 function revealDef() {
     const m = document.getElementById("definition");
     const eye = document.getElementById("eye");
@@ -23,7 +27,7 @@ function revealDef() {
     }
   }
 
-
+//dictionary of Terms in API module
 function collectionAPITerms(){
   let flashStack = [];
   flashStack.push({term: "API", definition: "Application Program Interface"});
@@ -43,7 +47,7 @@ function collectionAPITerms(){
   return flashStack;
 }
 
-
+//dictionary of Terms in HTML module
 function collectionHTMLTerms(){
   let flashStack = [];
   flashStack.push({term: "API", definition: "Application Program Interface"});
@@ -63,7 +67,7 @@ function collectionHTMLTerms(){
   return flashStack;
 }
 
-
+//function to randomize card order
 function fisher_yeates_randomize(array) {
   let currentIndex = array.length;
   let temporaryValue;
@@ -78,19 +82,19 @@ function fisher_yeates_randomize(array) {
   return array;
 }
 
-
+//make a randomized deck
 function restock_shuffle(){
     cardStack = collectionAPITerms();
     cardStack = fisher_yeates_randomize(cardStack);
 }
 
-
+//access the next card
 function switchCard(){
   //empty deck invokes restock
   if (cardStack.length < 1) {
     restock_shuffle();
   }
-  //flip over next card
+  //reveal definition of card
   let nextCard = cardStack.shift();
   document.getElementById("cardCount").innerText = `Cards Remaining: ${cardStack.length}`
   document.getElementById("term").innerText = nextCard.term;

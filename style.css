@@ -4,7 +4,14 @@ body {
     font-size: 12px;
     color: whitesmoke;
   }
+
   
+#navBar {
+  display: flex;
+  width: 100vw;
+}  
+
+
 .flashCard {
     color: black;
     font-family: 'Architects Daughter', cursive;
@@ -19,9 +26,8 @@ body {
     border: 2px solid black;
     background: wheat;
     box-shadow: 5px 5px 10px blue, 0px 0px 20px dodgerblue, 0px 0px 10px cornflowerblue, 0px 0px 5px black inset;
+}
 
-    
-  }
 
 #term {
   display: flex;
@@ -30,14 +36,17 @@ body {
   font-size: 5em;
 }
 
+
 #baseInfo {
   font-size: .7em;
 }
+
 
 #definition {
   font-size: 4em;
   display: none;
 }
+
 
 #cardCount {
   margin-right: 20px;
@@ -53,10 +62,6 @@ body {
   border: 2px inset darkgray;
 }
 
-#navBar {
-  display: flex;
-  width: 100vw;
-}
 
 .icon {
   color: lime;
@@ -65,6 +70,7 @@ body {
   margin-right: 10px;
   box-shadow: 5px 5px 10px blue, 0px 0px 20px dodgerblue, 0px 0px 10px cornflowerblue, 0px 0px 5px black inset;
 }
+
 
 #inactive {
   display: flex;
@@ -75,6 +81,7 @@ body {
   background: dimgray;
 }
 
+
 #active {
   display: flex;
   justify-content: center;
@@ -84,16 +91,19 @@ body {
   background: lightgrey;
 }
 
+
 #active:hover {
   color: red;
   background: white;
 }
+
 
 #version {
   color: lightblue;
   font-size: 10px;
   order: 1;
 }
+
 
 @media (max-width: 700px) {
 body {
