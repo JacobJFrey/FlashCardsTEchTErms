@@ -18,7 +18,8 @@ function changeTheme() {
 function revealDef() {
     const m = document.getElementById("definition");
     const eye = document.getElementById("eye");
-    if (m.style.display === "none") {
+    if (m.style.display === "none" ||
+        m.style.display === "") {
       m.style.display = "flex";
       eye.setAttribute("class","fas fa-eye-slash");
     } else {

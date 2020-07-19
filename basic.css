@@ -31,30 +31,29 @@ body {
 
 
   .icon {
-    color: black;
+    display: flex;
+    width: 60px;
+    height: 45px;
     border: 2px double black;
     border-radius: 5px;
     padding: 3px;
     margin-right: 10px;
-    box-shadow: 1px 1px 5px black, 0px 0px 5px darkgray, 0px 0px 5px lightgray inset;;
+    box-shadow: 1px 1px 5px black, 0px 0px 5px darkgray, 0px 0px 5px lightgray inset;
+    
+    font-size: medium;
+    color: black;
+    justify-content: center;
+    align-items: center;
   }
 
   #inactive {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 5%;
     color: darkslategray;
     background: #afafaf;
   }
 
   #active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 5%;
     color: gray;
-    background: lightgray;
+    background: whitesmoke;
   }
 
   #active:hover {
@@ -69,8 +68,10 @@ body {
     border-top: 0px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    box-shadow: 1px 1px 5px black, 0px 0px 5px darkgray, 0px 0px 5px lightgray inset;
 
     padding: 10px;
+    margin-top: -10px;
 
     font-size: medium;
   }
