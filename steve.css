@@ -4,8 +4,9 @@
     src: url('https://fonts.googleapis.com/css2?family=Modak&display=swap'); 
 }  */
 
+
 body {
-    background: linear-gradient(to bottom right, lime, yellow, #Ffce00, orange, red );
+    background: linear-gradient(to bottom right, lime, yellow, #Ffcc00, #ff6633, #ff0066 );
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
@@ -14,11 +15,92 @@ body {
     color: whitesmoke;
   }
   
+
+#navBar {
+  display: flex;
+  width: 100vw;
+}
+
+
+  #cardCount {
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 8px;
+    height: 30px;
+    width: 110px;
+    align-items: center;
+    justify-content: left;
+    display: inline-flex;
+    background-color: #ff0099;
+    color: black;
+    border: 3px inset #83f52c;
+  }
+
+  .icon {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 50%;
+    padding: 3px;
+    margin-right: 10px;
+    box-shadow: 5px 5px 10px lime, 
+                0px 0px 20px lime, 
+                0px 0px 10px yellow, 
+                0px 0px 5px darkslateblue inset;
+
+    font-size: large;
+    color: black;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inactive {
+    color: darkslategray;
+    background: darkslateblue;
+  }
+  
+  .active {
+    color: black;
+    background: #83f52c;
+    border: 3px solid #83f52c;
+    box-shadow: 0px -5px 2px yellow inset,
+                0px 5px 2px green inset;
+  }
+  
+  .active:hover {
+    color: black;
+    background: #83f52c;
+    border: 3px solid #83f52c;
+    box-shadow: 0px 5px 2px yellow inset,
+                0px -5px 2px green inset;
+  }
+
+  form {
+    color: black;
+    background: #ff0099;
+    border-color: #ff0099;
+    border-style: solid;
+    border-top: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 1px 1px 5px black, 
+                0px 0px 5px darkgray, 
+                0px 0px 5px lightgray inset;
+
+    padding: 10px;
+    margin-top: -10px;
+
+    font-size: medium;
+  }
+
+
 .flashCard {
-    color: orangered;
+    color: #ff6600;
     font-family: Ranchers, cursive;
-    text-shadow: 0px 0px 20px yellowgreen, 0px 0px 10px yellow;
-    
+    text-shadow:  0px 0px 7px black,
+                  0px 0px 10px yellow,
+                  0px 0px 20px yellowgreen;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,9 +108,10 @@ body {
     height: 30vh;
     padding: 20px;
     margin: 20px;
-    border: 2px solid black;
+    border: 5px inset #83f52c;
+    border-bottom-color: #Ffcc00;
+    border-right-color: #ff0099;
     background:black;
-    box-shadow: 5px 5px 10px lime, 0px 0px 20px lime, 0px 0px 10px #ffce8d, 0px 0px 5px burlywood inset;
 }
 
 #term {
@@ -47,55 +130,14 @@ font-size: .7em;
   display: none;
 }
 
-#cardCount {
-  margin-right: 20px;
-  padding-left: 10px;
-  padding-right: 8px;
-  height: 30px;
-  width: 110px;
-  align-items: center;
-  justify-content: left;
-  display: inline-flex;
-  background-color: black;
-  color: whitesmoke;
-  border: 2px inset darkgray;
-}
+
 
 #navBar {
   display: flex;
   width: 100vw;
 }
 
-.icon {
-  color: lime;
-  border: 2px double black;
-  padding: 3px;
-  margin-right: 10px;
-  box-shadow: 5px 5px 10px lime, 0px 0px 20px lime, 0px 0px 10px cornflowerblue, 0px 0px 5px burlywood inset;
-}
 
-#inactive {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 5%;
-  color: darkslategray;
-  background: dimgray;
-}
-
-#active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 5%;
-  color: gray;
-  background: lightgrey;
-}
-
-#active:hover {
-  color: greenyellow;
-  background: limegreen;
-}
 
 #version {
   color: lightblue;

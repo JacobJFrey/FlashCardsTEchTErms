@@ -22,6 +22,16 @@ theme.addEventListener('click',() => {
   changeTheme();
   });
 
+const flashcard_term = document.querySelector("#term");
+flashcard_term.addEventListener('dblclick', () => {
+  revealDef();
+});
+
+const flashcard_def = document.querySelector("#definition");
+flashcard_def.addEventListener('dblclick', () => {
+  swapCard();
+});
+
 });
 
 //icon references
@@ -50,7 +60,7 @@ function revealDef() {
 //dictionary of Terms in API module
 function collectionAPITerms(){
   cardStack.push({term: "API", definition: "Application Program Interface"});
-  cardStack.push({term: "CRUD", definition: "Creat, Read, Update, Delete"});
+  cardStack.push({term: "CRUD", definition: "Create, Read, Update, Delete"});
   cardStack.push({term: "DNS", definition: "Domain Name System"});
   cardStack.push({term: "DTO", definition: "Data Transfer Object"});
   cardStack.push({term: "HTTP", definition: "HyperText Transfer Protocol"});
@@ -109,7 +119,11 @@ function restock_shuffle(){
     if (!isStocked) {
       const instructions = '<span>TE: TERM-inator</span><ul id="baseInfo" style="list-style-type:none;"><li><i id="eye" class="fas fa-eye"></i> &emsp; reveals definition</li><li><i class="fas fa-hand-spock"></i> &emsp; changes to next flash card</li><li><i class="fas fa-random"></i> &emsp; shuffles the stack</li><li><i class="fas fa-street-view"></i> &emsp; engages No Return Steve mode</li></ul>';
       const steve_story = '<span style="display: flex; flex-direction: column; padding: 10px;">History of Steve:<br><span style="font-size: 30px;">Steve was a squirrel who lived in the backyard and moved to Miami do a buddy cop show with Don Johnson in the 80s.</span></span>';
-      cardStack.push({term:instructions, definition:steve_story});
+      document.getElementById("cardCount").innerText = 'Version 0.20717 Alpha';
+      document.getElementById("term").innerHTML = instructions;
+      document.getElementById("definition").style.display = "none";
+      document.getElementById("definition").innerHTML = steve_story;
+      document.querySelector("#eye").setAttribute("class",close_eye);
     }
 }
 
