@@ -142,6 +142,15 @@ body {
     100% {text-shadow:  0px 0px 7px black, -10px -10px 3px yellow, -20px -20px 5px yellowgreen;}
   }
 
+  @keyframes fadetail {
+    0%   {text-shadow:  0px 0px 0px #f09, 20px 20px 5px #a07, 40px 40px 10px #504;
+          color: white;}
+    25%  {text-shadow:  4px 4px 1px #e09, 24px 24px 6px #906, 44px 44px 11px #403;}
+    50%  {text-shadow:  8px 8px 2px #d08, 28px 28px 7px #806, 48px 48px 12px #302;}
+    75%  {text-shadow:  12px 12px 3px #c08, 32px 32px 8px #705, 52px 52px 13px #201;}
+    100% {text-shadow:  16px 16px 4px #b07, 36px 36px 9px #605, 56px 56px 14px #000;}
+  }
+
 .flashCard {
     color: #ff6600;
     font-family: Ranchers, cursive;
@@ -160,8 +169,8 @@ body {
     border-right-color: #ff0099;
     background:black;
     cursor: grab;
-    animation-name: spotlight;
-    animation-duration: 4s;
+    animation-name: fadetail;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
 }
 
