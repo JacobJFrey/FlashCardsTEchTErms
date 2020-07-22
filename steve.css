@@ -36,8 +36,11 @@ body {
     justify-content: left;
     display: inline-flex;
     background-color: #ff0099;
+    box-shadow: 1px 1px 5px black, 
+    0px 0px 5px darkgray, 
+    0px 0px 5px lightgray inset;
     
-    border: 3px inset #83f52c;
+    border: 3px inset #f09;
     border-radius: 15px;
   }
 
@@ -88,7 +91,7 @@ body {
     color: yellow;
     background: #ff0099;
     border-color: #ff0099;
-    border-style: solid;
+    border-style: inset;
     border-top: 0px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
