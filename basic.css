@@ -16,6 +16,7 @@ body {
 
 
   #cardCount {
+    font-size: .7rem;
     margin-right: 20px;
     padding-left: 10px;
     padding-right: 8px;
@@ -61,6 +62,7 @@ body {
     background: white;
   }
 
+  .styleSelector,
   form {
     background: whitesmoke;
     border-color: black;
@@ -76,9 +78,38 @@ body {
     font-size: medium;
   }
 
+/* THEME MENU */
+
+.dropButton {
+  justify-self: center;
+  font-size: 1.5rem;
+  width: 150px;
+  cursor: pointer;
+}
+
+.styleSelector {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.styleContent {
+  display: none;
+}
+
+.styleContent a {
+  display: block;
+  text-decoration: none;
+}
+
+.styleSelector:hover .styleContent{
+  display: block;
+}
+
+/* FLASH_CARD */
 
 .flashCard {
-    color: d;
+    color: black;
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 0px 0px 20px lightgray, 0px 0px 10px lightgray;
     
@@ -92,7 +123,8 @@ body {
     border: 2px solid black;
     background:whitesmoke;
     box-shadow: 5px 5px 10px black, 0px 0px 20px darkgray, 0px 0px 15px lightgray inset;
-}
+    cursor: pointer;
+  }
 
 
 #baseInfo {
@@ -112,6 +144,7 @@ font-size: 5em;
   display: none;
 }
 
+/* OTHER SIZE DEVICES */
 
 @media (max-width: 700px) {
 body {

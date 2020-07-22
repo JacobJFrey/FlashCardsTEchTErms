@@ -23,17 +23,22 @@ body {
 
 
   #cardCount {
+    font-weight: bold;
+    font-size: .8rem;
+    text-shadow: 0px 0px 5px black;
+    color: yellow;
     margin-right: 20px;
     padding-left: 10px;
     padding-right: 8px;
     height: 30px;
-    width: 110px;
+    width: 125px;
     align-items: center;
     justify-content: left;
     display: inline-flex;
     background-color: #ff0099;
-    color: black;
+    
     border: 3px inset #83f52c;
+    border-radius: 15px;
   }
 
   .icon {
@@ -66,6 +71,7 @@ body {
     border: 3px solid #83f52c;
     box-shadow: 0px -5px 2px yellow inset,
                 0px 5px 2px green inset;
+    transition: box-shadow 3s;
   }
   
   .active:hover {
@@ -76,8 +82,10 @@ body {
                 0px -5px 2px green inset;
   }
 
+  .styleSelector,
   form {
-    color: black;
+    text-shadow: 0px 0px 5px black;
+    color: yellow;
     background: #ff0099;
     border-color: #ff0099;
     border-style: solid;
@@ -94,13 +102,52 @@ body {
     font-size: medium;
   }
 
+  /* THEME MENU */
+
+  .dropButton {
+    justify-self: center;
+    font-size: 1.5rem;
+    width: 150px;
+    cursor: grabbing;
+  }
+  
+  .styleSelector {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+
+  }
+  
+  .styleContent {
+    display: none;    
+
+  }
+  
+  .styleContent a {
+    display: block;
+    text-decoration: none;
+  }
+  
+  .styleSelector:hover .styleContent{
+    display: block;
+  }
+
+  /* FLASH CARD */
+
+  @keyframes spotlight {
+    0%   {text-shadow:  0px 0px 7px black, -10px -10px 3px yellow, -20px -20px 5px yellowgreen;}
+    25%  {text-shadow:  0px 0px 7px black, 10px -10px 3px yellow, 20px -20px 5px yellowgreen;}
+    50%  {text-shadow:  0px 0px 7px black, 10px 10px 3px yellow, 20px 20px 5px yellowgreen;}
+    75%  {text-shadow:  0px 0px 7px black, -10px 10px 3px yellow, -20px 20px 5px yellowgreen;}
+    100% {text-shadow:  0px 0px 7px black, -10px -10px 3px yellow, -20px -20px 5px yellowgreen;}
+  }
 
 .flashCard {
     color: #ff6600;
     font-family: Ranchers, cursive;
     text-shadow:  0px 0px 7px black,
-                  0px 0px 10px yellow,
-                  0px 0px 20px yellowgreen;
+                  10px 10px 30px yellow,
+                  -10px -10px 30px yellowgreen;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,21 +159,25 @@ body {
     border-bottom-color: #Ffcc00;
     border-right-color: #ff0099;
     background:black;
+    cursor: grab;
+    animation-name: spotlight;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 #term {
 display: flex;
 flex-direction: column;
 height: auto;
-font-size: 5em;
+font-size: 2rem;
 }
 
 #baseInfo {
-font-size: .7em;
+font-size: 1.4rem;
 }
 
 #definition {
-  font-size: 4em;
+  font-size: 2.5rem;
   display: none;
 }
 

@@ -1,4 +1,5 @@
 let cardStack = [];
+let steveMiami = false;
 
 //event listeners
 document.addEventListener('DOMContentLoaded', () =>{
@@ -23,12 +24,12 @@ theme.addEventListener('click',() => {
   });
 
 const flashcard_term = document.querySelector("#term");
-flashcard_term.addEventListener('dblclick', () => {
+flashcard_term.addEventListener('click', () => {
   revealDef();
 });
 
 const flashcard_def = document.querySelector("#definition");
-flashcard_def.addEventListener('dblclick', () => {
+flashcard_def.addEventListener('click', () => {
   swapCard();
 });
 
@@ -40,8 +41,14 @@ const open_eye = "fas fa-eye";
 
 //function switched CSS theme
 function changeTheme() {
-  document.getElementById("thisStyle").setAttribute("href","steve.css");
-}
+  let currentTheme = document.getElementById("thisStyle")
+  if (!steveMiami) {
+      currentTheme.setAttribute("href","steve.css");   
+    } else {
+      currentTheme.setAttribute("href","basic.css");
+    }  
+    steveMiami = !steveMiami;
+  }
 
 //reveal definition
 function revealDef() {
