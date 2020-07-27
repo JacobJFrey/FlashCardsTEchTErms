@@ -73,7 +73,7 @@ function collectionAPITerms(){
   cardStack.push({term: "HTTP", definition: "HyperText Transfer Protocol"});
   cardStack.push({term: "HTTPS", definition: "HyperText Transfer Protocol Secure"});
   cardStack.push({term: "JAR", definition: "Java ARchive"});
-  cardStack.push({term: "JWT", definition: "Java Web Token"});
+  cardStack.push({term: "JWT", definition: "JSON Web Token"});
   cardStack.push({term: "JSON", definition: "JavaScript Object Notation"});
   cardStack.push({term: "MVC", definition: "Model View Controller"});
   cardStack.push({term: "REST", definition: "REpresentational State Transfer"});
