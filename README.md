@@ -26,7 +26,7 @@ Users should be able to get a stack of flash cards, iterate through them, and le
    + add different themes
    + theme selection menu
    + get collaborators to add themes
-   + add avariety of colorful options
+   + add a variety of colorful options
    + include wild and wacky themes
 ***
 
