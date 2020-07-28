@@ -6,7 +6,7 @@ output: pdf_document
 
 # Flash Cards TEch TErms
 
-This project is aimed at creating a simple flash card programme to assist in learning coding terms learned at Tech Elevator Bootcamp. 
+This project is aimed at creating a simple flash card program to assist in learning coding terms learned at Tech Elevator Bootcamp. 
 Users should be able to get a stack of flash cards, iterate through them, and learn Acronyms and Terms.
 
 ***
