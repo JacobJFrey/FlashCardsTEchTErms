@@ -64,6 +64,19 @@ function revealDef() {
     }
   }
 
+  //dictionary of Terms in SQL Module
+  function collectionSQLTerms(){
+    cardStack.push({term: "GUI", definition: "Global Unique Identifier"});
+    cardStack.push({term: "ERD", definition: "Entity Relationship Diagram"});
+    cardStack.push({term: "ACID", definition: "Atomic, Consistency, Isolation, Durability"});
+    cardStack.push({term: "DML", definition: "Database Manipulation Language"});
+    cardStack.push({term: "DDL", definition: "Database Definition Language"});
+    cardStack.push({term: "DCL", definition: "Database Control Language"});
+    cardStack.push({term: "OWASP", definition: "Open Web Access Protocol"});
+    cardStack.push({term: "POJO", definition: "Plain Old Java Object"});
+    cardStack.push({term: "CRUD", definition: "Create, Read, Update, Delete"});
+  }
+
 //dictionary of Terms in API module
 function collectionAPITerms(){
   cardStack.push({term: "API", definition: "Application Program Interface"});
@@ -121,6 +134,11 @@ function restock_shuffle(){
     let hasHTML_TERM = (document.querySelector("#TE_HTML").checked);
     if (hasHTML_TERM) {
       collectionHTMLTerms();
+      isStocked = true;
+    }
+    let hasSQL_TERM = (document.querySelector("#TE_SQL").checked);
+    if (hasSQL_TERM) {
+      collectionSQLTerms();
       isStocked = true;
     }
     if (!isStocked) {
