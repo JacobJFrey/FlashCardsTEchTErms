@@ -72,7 +72,7 @@ function revealDef() {
     cardStack.push({term: "DML", definition: "Database Manipulation Language"});
     cardStack.push({term: "DDL", definition: "Database Definition Language"});
     cardStack.push({term: "DCL", definition: "Database Control Language"});
-    cardStack.push({term: "OWASP", definition: "Open Web Access Protocol"});
+    cardStack.push({term: "OWASP", definition: "Open Web Access Security Protocol"});
     cardStack.push({term: "POJO", definition: "Plain Old Java Object"});
     cardStack.push({term: "CRUD", definition: "Create, Read, Update, Delete"});
   }
