@@ -64,6 +64,32 @@ function revealDef() {
     }
   }
 
+  //dictionary of Terms in Java
+  function collectionJavaDef(){
+    cardStack.push({term: "DevOps", definition: "Development Operations: delivery of software by continuous collaboration, communication, automation and integration"});
+    cardStack.push({term: "TDD", definition: "Test Driven Development"});
+    cardStack.push({term: "Polymorphism", definition: "the ability of code to take on different forms"});
+    cardStack.push({term: "Interfaces", definition: "completely abstract type that dictates behaviors a class must implement"});
+    cardStack.push({term: "Extend", definition: "specifies the superclass from which a class inherits"});
+    cardStack.push({term: "UNIT TEST", definition: "concentrated and focused testing of a single unit, like a class"});
+    cardStack.push({term: "ACCEPTANCE TEST", definition: "formal testing of user end functionality, generally by a person"});
+    cardStack.push({term: "JUNIT", definition: "an open source framework for writing and running Java tests"});
+    cardStack.push({term: "REGRESSION TEST", definition: "testing changed code to ensure it has not changed the functionality of the existing application"});
+    cardStack.push({term: "WATERFALL", definition: "sequential development model where each stage is completed before beginning next stage"});
+    cardStack.push({term: "AGILE", definition: "software development model through cross-functional teams and end users"});
+    cardStack.push({term: "ANNOTATIONS", definition: "provide metadata for the Java code"});
+    cardStack.push({term: "REFACTOR", definition: "evaluating and altering pre-existing code without changing behavior"});
+    cardStack.push({term: "INPUT VALIDATION", definition: "testing supplied input to make sure it is properly formulated"});
+    cardStack.push({term: "FINALLY", definition: "executes at end of try block, generally used to clean up loose ends"});
+    cardStack.push({term: "TRY", definition: "defines a block of code that may throw an exception"});
+    cardStack.push({term: "CATCH", definition: "defines a block of code to execute if a TRY block throws an exception"});
+    cardStack.push({term: "COMPILE ERRORS", definition: "errors occurring when attempting to compile code fails"});
+    cardStack.push({term: "RUNTIME ERRORS", definition: "error occurring when the program is running, usually can be defined with EXCEPTIONS"});
+    cardStack.push({term: "CHECKED EXCEPTION", definition: "subclass of java.lang.Throwable; forseeable and handled with TRY - CATCH block"});
+    cardStack.push({term: "UNCHECKED", definition: "aka RUNTIME EXCEPTION; usually programming errors"});
+    cardStack.push({term: "DEVOPS", definition: "delivery"});
+  }
+
   //dictionary of Terms in SQL Module
   function collectionSQLTerms(){
     cardStack.push({term: "GUI", definition: "Global Unique Identifier"});
@@ -141,6 +167,11 @@ function restock_shuffle(){
       collectionSQLTerms();
       isStocked = true;
     }
+    let hasJAVA_TERM = (document.querySelector("#TE_JAVA").checked);
+    if (hasJAVA_TERM) {
+      collectionJavaDef();
+      isStocked = true;
+    }
     if (!isStocked) {
       const instructions = '<span>TE: TERM-inator</span><ul id="baseInfo" style="list-style-type:none;"><li><i id="eye" class="fas fa-eye"></i> &emsp; reveals definition</li><li><i class="fas fa-hand-spock"></i> &emsp; changes to next flash card</li><li><i class="fas fa-random"></i> &emsp; shuffles the stack</li><li><i class="fas fa-street-view"></i> &emsp; toggles Steve mode</li></ul>';
       const steve_story = '<span style="display: flex; flex-direction: column; padding: 10px;">History of Steve:<br><span style="font-size: 30px;">Steve was a squirrel who lived in the backyard and moved to Miami do a buddy cop show with Don Johnson in the 80s.</span></span>';
@@ -171,4 +202,4 @@ function swapCard(){
   document.getElementById("definition").style.display = "none";
   document.getElementById("definition").innerText = nextCard.definition;
   document.querySelector("#eye").setAttribute("class",close_eye);
-}
+  }
