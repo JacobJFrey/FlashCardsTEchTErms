@@ -87,7 +87,7 @@ function revealDef() {
     cardStack.push({term: "RUNTIME ERRORS", definition: "error occurring when the program is running, usually can be defined with EXCEPTIONS"});
     cardStack.push({term: "CHECKED EXCEPTION", definition: "subclass of java.lang.Throwable; forseeable and handled with TRY - CATCH block"});
     cardStack.push({term: "UNCHECKED", definition: "aka RUNTIME EXCEPTION; usually programming errors"});
-    cardStack.push({term: "DEVOPS", definition: "delivery"});
+    cardStack.push({term: "Software Development Life Cycle", definition: "Identify, Plan, Design, Build, Test, Deploy"});
   }
 
   //dictionary of Terms in SQL Module
