@@ -181,6 +181,7 @@ function restock_shuffle(){
       document.getElementById("definition").innerHTML = steve_story;
       document.querySelector("#eye").setAttribute("class",close_eye);
     }
+    shuffleDeck();
 }
 
 //shuffle the deck
