@@ -89,7 +89,7 @@ function revealDef() {
     cardStack.push({term: "UNCHECKED", definition: "aka RUNTIME EXCEPTION; usually programming errors"});
     cardStack.push({term: "Software Development Life Cycle", definition: "Identify, Plan, Design, Build, Test, Deploy"});
     cardStack.push({term: "Primitive Type", definition: "contained on the stack; most basic variable types"});
-    cardStack.push({term: "Reference Type", definition: "on the heap, references locations on the stack; more complex variable types"});
+    cardStack.push({term: "Reference Type", definition: "located on the heap but references the stack; more complex variable types"});
     cardStack.push({term: "Parse", definition: "Look for a certain data type within another data type"});
     cardStack.push({term: "Wrapper Classes", definition: "an Object class corresponding to a primitive type"});
     cardStack.push({term: "Immutable", definition: "unable to be changed. A new instance is instantiated"});
