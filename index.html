@@ -21,7 +21,7 @@
 <body>
     
     <div id="navBar">    
-        <!--setting up the navi_bar--> 
+        <!--setting up the navigation bar--> 
         
         <div id="cardCount">Version 0.20721 Alpha</div>
         
@@ -34,20 +34,20 @@
         <a id="theme" class="icon active"><i class="fas fa-street-view"></i></a>
 
         <form>
-            <input type="checkbox" id='TE_API' name='TE_API' value="TE_API" checked><label for='TE_API'> API Module Terms</label><br>
-            <input type="checkbox" id='TE_HTML' value="TE_HTML" checked><label for='TE_HTML'> HTML Module Terms</label>
-            <input type="checkbox" id='TE_SQL' value="TE_SQL" checked><label for='TE_SQL'> SQL Module Terms</label>
-            <input type="checkbox" id='TE_JAVA' value="TE_JAVA" checked><label for='TE_JAVA'> Java Module Terms</label>
+            <div><input type="checkbox" id='TE_API' name='TE_API' value="TE_API" checked><label for='TE_API'> API Module Terms</label></div>
+            <div><input type="checkbox" id='TE_HTML' value="TE_HTML" checked><label for='TE_HTML'> HTML Module Terms</label></div>
+            <div><input type="checkbox" id='TE_JAVA' value="TE_JAVA" checked><label for='TE_JAVA'> Java Module Terms</label></div>
+            <div><input type="checkbox" id='TE_SQL' value="TE_SQL" checked><label for='TE_SQL'> SQL Module Terms</label></div>
         </form>
 
         <div class='styleSelector'>
             <div class='dropButton'>Themes</div>
             <div class='styleContent'>
-                <a>Basic Theme</a>
-                <!-- <a>Light Theme</a> -->
-                <!-- <a>Dark Theme</a> -->
-                <a>Steve Mode Engage</a>
-                <!-- <a>WillKillGohma</a> -->
+                <a class='implemented'>Basic Theme</a>
+                <a class='unimplemented'>Light Theme</a>
+                <a class='unimplemented'>Dark Theme</a>
+                <a clss="implemented">Steve Mode</a>
+                <a class='unimplemented'>WillKillGohma</a>
             </div>
         </div>
 
@@ -57,10 +57,12 @@
     <div id="term" class="flashCard">
         <span>TE: TERM-inator</span>
         <ul id="baseInfo" style="list-style-type:none;">
-        <li><i id="eye" class="fas fa-eye"></i> &emsp; reveals definition</li>
+        <li><i id="eye" class="fas fa-eye"></i> &emsp; toggle reveal/hide definition</li>
         <li><i class="fas fa-hand-spock"></i> &emsp; changes to next flash card</li>
         <li><i class="fas fa-random"></i> &emsp; reload & shuffles the stack</li>
         <li><i class="fas fa-street-view"></i> &emsp; toggle Steve mode</li>
+        <li><i class="fas fa-sync-alt"></i> &emsp; click on card to reveal/hide answer</li> 
+        <li><i class="fas fa-step-forward"></i> &emsp; click to advance to next cards</li>
         </ul>
     </div>
 

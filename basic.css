@@ -62,9 +62,8 @@ body {
     background: white;
   }
 
-/* THEME MENU */
+/* THEME MENU AND FORM*/
 
-.styleSelector,
 form {
   background: whitesmoke;
   border-color: black;
@@ -78,9 +77,10 @@ form {
   margin-top: -10px;
 
   font-size: medium;
+
+  display: flex;
+  flex-direction: column;
 }
-
-
 
 .dropButton {
   justify-self: center;
@@ -90,10 +90,20 @@ form {
 }
 
 .styleSelector {
-  background: linear-gradient(to right, whitesmoke, whitesmoke, lightgray, gray);
-  position: relative;
-  display: inline-flex;
-  align-items: center;
+  background: linear-gradient(to bottom, whitesmoke, whitesmoke, lightgray, gray);
+  border-color: black;
+  border-style: solid;
+  border-top: 0px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 1px 1px 5px black, 0px 0px 5px darkgray, 0px 0px 5px lightgray inset;
+
+  padding: 10px;
+  margin-top: -10px;
+
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
   cursor: pointer;
   padding-left: 15px;
 }
@@ -104,6 +114,7 @@ form {
 
 .styleContent {
   display: none;
+  font-size: 15px;
 }
 
 .styleContent a {
@@ -113,6 +124,16 @@ form {
 
 .styleSelector:hover .styleContent{
   display: block;
+  height: auto;
+}
+
+.implemented {
+  order: 0;
+}
+
+.unimplemented {
+  color: lightgray;
+  order: 1;
 }
 
 /* FLASH_CARD */

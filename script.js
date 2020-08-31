@@ -88,6 +88,12 @@ function revealDef() {
     cardStack.push({term: "CHECKED EXCEPTION", definition: "subclass of java.lang.Throwable; forseeable and handled with TRY - CATCH block"});
     cardStack.push({term: "UNCHECKED", definition: "aka RUNTIME EXCEPTION; usually programming errors"});
     cardStack.push({term: "Software Development Life Cycle", definition: "Identify, Plan, Design, Build, Test, Deploy"});
+    cardStack.push({term: "Primitive Type", definition: "contained on the stack; most basic variable types"});
+    cardStack.push({term: "Reference Type", definition: "on the heap, references locations on the stack; more complex variable types"});
+    cardStack.push({term: "Parse", definition: "Look for a certain data type within another data type"});
+    cardStack.push({term: "Wrapper Classes", definition: "an Object class corresponding to a primitive type"});
+    cardStack.push({term: "Immutable", definition: "unable to be changed. A new instance is instantiated"});
+
   }
 
   //dictionary of Terms in SQL Module
@@ -173,13 +179,13 @@ function restock_shuffle(){
       isStocked = true;
     }
     if (!isStocked) {
-      const instructions = '<span>TE: TERM-inator</span><ul id="baseInfo" style="list-style-type:none;"><li><i id="eye" class="fas fa-eye"></i> &emsp; reveals definition</li><li><i class="fas fa-hand-spock"></i> &emsp; changes to next flash card</li><li><i class="fas fa-random"></i> &emsp; shuffles the stack</li><li><i class="fas fa-street-view"></i> &emsp; toggles Steve mode</li></ul>';
+      const instructions = '<span>TE: TERM-inator</span><ul id="baseInfo" style="list-style-type:none;"><li><i id="eye" class="fas fa-eye"></i> &emsp; toggle reveal/hide definition</li><li><i class="fas fa-hand-spock"></i> &emsp; changes to next flash card</li><li><i class="fas fa-random"></i> &emsp; reload & shuffles the stack</li><li><i class="fas fa-street-view"></i> &emsp; toggle Steve mode</li><li><i class="fas fa-sync-alt"></i> &emsp; click on card to reveal/hide answer</li> <li><i class="fas fa-step-forward"></i> &emsp; click to advance to next cards</li></ul>';
       const steve_story = '<span style="display: flex; flex-direction: column; padding: 10px;">History of Steve:<br><span style="font-size: 30px;">Steve was a squirrel who lived in the backyard and moved to Miami do a buddy cop show with Don Johnson in the 80s.</span></span>';
       document.getElementById("cardCount").innerText = 'Version 0.20717 Alpha';
       document.getElementById("term").innerHTML = instructions;
       document.getElementById("definition").style.display = "none";
       document.getElementById("definition").innerHTML = steve_story;
-      document.querySelector("#eye").setAttribute("class",close_eye);
+      document.querySelector("#eye").setAttribute("class",open_eye);
     }
     shuffleDeck();
 }
@@ -202,5 +208,5 @@ function swapCard(){
   document.getElementById("term").innerText = nextCard.term;
   document.getElementById("definition").style.display = "none";
   document.getElementById("definition").innerText = nextCard.definition;
-  document.querySelector("#eye").setAttribute("class",close_eye);
-  }
+  document.querySelector("#eye").setAttribute("class",open_eye);
+}
