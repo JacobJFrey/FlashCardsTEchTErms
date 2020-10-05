@@ -96,6 +96,35 @@ function revealDef() {
 
   }
 
+  function collectionDotNetDef(){
+    cardStack.push({term: "Encapsulation", definition: "Keeping a class internalized to make code extendable, maintainable and promote loose coupling"});
+    cardStack.push({term: "Inheritance", definition: "Allows child class to access parent's attributes and methods"});
+    cardStack.push({term: "Polymorphism", definition: "assigning different meaning or usage to the same code"});
+    cardStack.push({term: "Dictionary", definition: "a referenced collection with a key - value pair"});
+    cardStack.push({term: "Derived Property", definition: "a property that can be determined or calculated from other properties"});
+    cardStack.push({term: "Backing Variable", definition: "a temporary variable to help store value in a class variable"});
+    cardStack.push({term: "Interface", definition: "a contract that defines what the methods a user can expect from implemented class"});
+    cardStack.push({term: "Implement", definition: "inheriting an interface into a class"});
+    cardStack.push({term: "Extend", definition: "inheriting a parent class into a child class"});
+    cardStack.push({term: "Instantiate", definition: "delegate memory to an object or variable"});
+    cardStack.push({term: "Declare", definition: "create name and type for a variable"});
+    cardStack.push({term: "Initialize", definition: "to give value to a variable or object"});
+    cardStack.push({term: "Constructor", definition: "a method that creates or substantiates an instance of an object"});
+    cardStack.push({term: "Instance", definition: "a unique Object created from a Class"});
+    cardStack.push({term: "Big O Notation", definition: "describes the complexity of code and the time it takes to run"});
+    cardStack.push({term: "Class", definition: "code which is a blueprint of an Object"});
+    cardStack.push({term: "Private", definition: "Access Modifier: only the class can access this variable/method/Class"});
+    cardStack.push({term: "Protected", definition: "Access Modifier: only the class or its children can access this variable/method/Class"});
+    cardStack.push({term: "Public", definition: "Access Modifier: anyone can access this variable/method/Class"});
+    cardStack.push({term: "Static", definition: "Signature Variable: method can be accessed or through the class without instantiation"});
+    cardStack.push({term: "Access Modifier", definition: "sets the rules for how a class/method/variable can be accessed"});
+    cardStack.push({term: "Signature Variable", definition: "variable in the signature of a method that sets the rules for how the method is implemented"});
+    cardStack.push({term: "Virtual", definition: "Signature Variable: designated in superclass, allows ability for subclass to change how the parent method is implemented"});
+    cardStack.push({term: "Override", definition: "Signature Variable: designated in subclass, allows method to change the way a virtual parent method is implemented"});
+    cardStack.push({term: "Sealed", definition: "Access Modifier: class cannot be extended or inherited by a subclass"});
+    cardStack.push({term: "Abstract", definition: "a class that contains methods without code and cannot be instantiated but can be inherited by a subclass"});
+  }
+
   //dictionary of Terms in SQL Module
   function collectionSQLTerms(){
     cardStack.push({term: "GUI", definition: "Global Unique Identifier"});
@@ -176,6 +205,11 @@ function restock_shuffle(){
     let hasJAVA_TERM = (document.querySelector("#TE_JAVA").checked);
     if (hasJAVA_TERM) {
       collectionJavaDef();
+      isStocked = true;
+    }
+    let hasDOTNET_TERM = (document.querySelector("#TE_DOTNET").checked);
+    if (hasDOTNET_TERM) {
+      collectionDotNetDef();
       isStocked = true;
     }
     if (!isStocked) {
